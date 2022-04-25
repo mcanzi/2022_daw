@@ -1,0 +1,91 @@
+---
+title: "Working Title"
+author: "__Dr Massimiliano Canzi__"
+date: "May 5th 2022"
+header-includes:
+  - \usepackage{tipa}
+  - \usepackage{ulem}
+output: 
+  beamer_presentation:
+    latex_engine: xelatex
+    theme: "Frankfurt"
+    colortheme: "dove"
+    font: "serif"
+classoption: "aspectratio=169"
+---
+
+```{r setup, include = F}
+knitr::opts_chunk$set(fig.align="center")
+```
+
+# Introduction
+ 
+## Who am I
+
+\pause
+
+\begin{itemize}[<+->]
+\item Lab Manager / Data Scientist @ Uni Konstanz
+\item PhD in Linguistics @ Uni of Manchester 
+\item MSc Forensic Speech Science @ Uni of York
+\item MA Linguistics @ Uni of Manchester 
+\end{itemize}
+
+## Who am I
+
+Interested in R, experimental design, reproducibility, open science
+ 
+## Once Upon a Time... in Hollywood
+
+\pause Planning a (linguistics) experiment and filming a Hollywood movie are not as far apart as you would think: 
+
+\begin{itemize}[<+->]
+\item Write a script
+\item Set a production budget 
+\item Casting, locations, props, storyboards
+\item Shoot the film
+\item Editing, colour grading, VFX
+\item Press, festivals
+\end{itemize}
+
+## Once Upon a Time... in Hollywood
+
+\pause Planning a (linguistics) experiment and filming a Hollywood movie are not as far apart as you would think: 
+
+\begin{itemize}[<+->]
+\item Formulate a research question
+\item Budget, weight methodologies, availability of participants and tools
+\item Recruitment, equipment setup, hardware and software
+\item Data collection
+\item Data wrangling, analaysis and visualisation
+\item Paper, conferences
+\end{itemize}
+
+## Once Upon a Time... in Hollywood
+
+Just like when shooting a film. Plan ahead. \pause
+
+The more things you can accurately predict and plan, the more solid your design and experiment will be. That's pretty much all there is to it. 
+
+## Thank you! 
+
+Questions?
+
+## Just kidding
+
+\pause
+
+__Important:__ Starting now, most of the advice in this presentation is based on personal experience. As often is the case, there are many ways one can reach a destination. I am simply presenting some of the tips that helped me along the way. 
+
+# Pre-Production
+
+## Research Questions
+
+
+
+\pause 
+
+# Production
+
+# Post-Production
+
