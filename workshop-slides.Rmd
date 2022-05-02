@@ -14,7 +14,7 @@ output:
 classoption: "aspectratio=169"
 ---
 
-```{r}
+```{r, include = F}
 library(ggpubr)
 library(lme4)
 library(lmerTest)
@@ -63,7 +63,7 @@ Interested in R, experimental design, reproducibility, open science
 
 \begin{itemize}[<+->]
 \item Formulate a research question
-\item Budget, weight methodologies, availability of participants and tools
+\item Budget, weigh methodologies, availability of participants and tools
 \item Recruitment, equipment setup, hardware and software
 \item Data collection
 \item Data wrangling, analaysis and visualisation
@@ -120,7 +120,7 @@ Choosing an experimental method is equivalent to choosing the __resolution__ of 
 
 \pause
 
-The experimental design is, obviously, directly correlated to the research question and the hypotheses. 
+The experimental design should be directly correlated to the research question and the hypotheses. 
 
 \pause
 
@@ -137,7 +137,25 @@ It is really important that your design allows you to confidently test your hypo
 
 # Production
 
+## Finding your balance 
+
+\pause
+
+Things to consider: 
+
+\begin{itemize}[<+->]
+\item Location of the experiment (e.g. lab, online)
+\item Number of items
+\item Number of participants
+\item What sample?
+\item ...
+\end{itemize}
+
 # Post-Production
+
+## Pre-processing and Analysis
+
+__Know your data!__
 
 ## Pre-processing and Analysis
 
@@ -204,6 +222,13 @@ arranged_plot
 \pause
 
 Welcome back!
+
+\pause
+
+Some references: 
+
+- Baayen, R. H., & Milin, P. (2010). Analyzing reaction times. International Journal of Psychological Research, 3(2), 12-28.
+- Leys, C., Ley, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. Journal of experimental social psychology, 49(4), 764-766.
 
 ## Pre-processing and Analysis
 
