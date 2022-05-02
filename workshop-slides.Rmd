@@ -90,7 +90,50 @@ __Important:__ Starting now, most of the advice in this presentation is based on
 
 ## Research Questions
 
+\pause
+
+Find a link between the theory and the operalisation. 
+
 \pause 
+
+\begin{itemize}[<+->]
+\item What method is best to answer the question? 
+\item How many experiments? 
+\item What experimental design?
+\item How are variables going to be coded?
+\end{itemize}
+
+## Methods 
+
+\pause
+
+Choosing an experimental method is equivalent to choosing the __resolution__ of your study.
+
+## Experiment Number
+
+\pause
+
+- Helps limit the design of the study 
+- Follow-up studies allow for clarification
+
+## Experimental design
+
+\pause
+
+The experimental design is, obviously, directly correlated to the research question and the hypotheses. 
+
+\pause
+
+It is really important that your design allows you to confidently test your hypotheses as you intend to. 
+
+\pause
+
+\begin{itemize}[<+->]
+\item Know your limits! 
+\item Know your goals! 
+\item Choose a balanced design
+\item Register your report
+\end{itemize}
 
 # Production
 
@@ -192,7 +235,5 @@ We fitted a linear mixed model (estimated using REML and nloptwrap optimizer) to
 \footnotesize
 
 Analyses were conducted using the R Statistical language (version 4.0.3; R Core Team, 2020) on macOS Big Sur 10.16, using the packages ggpubr (version 0.4.0; Alboukadel Kassambara, 2020), Matrix (version 1.3.2; Douglas Bates and Martin Maechler, 2021), lme4 (version 1.1.26; Douglas Bates et al., 2015), ggplot2 (version 3.3.5; Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.), stringr (version 1.4.0; Hadley Wickham, 2019), tidyr (version 1.1.2; Hadley Wickham, 2020), forcats (version 0.5.1; Hadley Wickham, 2021), readr (version 1.4.0; Hadley Wickham and Jim Hester, 2020), dplyr (version 1.0.4; Hadley Wickham et al., 2021), tibble (version 3.1.5; Kirill Müller and Hadley Wickham, 2021), lmerTest (version 3.1.3; Kuznetsova A et al., 2017), purrr (version 0.3.4; Lionel Henry and Hadley Wickham, 2020), sjPlot (version 2.8.9; Lüdecke D, 2021), viridis (version 0.5.1; Simon Garnier, 2018), viridisLite (version 0.4.0; Simon Garnier et al., 2021) and tidyverse (version 1.3.0; Wickham et al., 2019).
-
-
 
 
