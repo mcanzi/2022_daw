@@ -1,7 +1,7 @@
 ---
-title: "Working Title"
+title: "Breaking Bad Habits in Experimental and Quantitative Research in Linguistics "
 author: "__Dr Massimiliano Canzi__"
-date: "May 5th 2022"
+date: "__mcanzi/2022_daw__ | May 5th 2022"
 header-includes:
   - \usepackage{tipa}
   - \usepackage{ulem}
@@ -65,7 +65,7 @@ Consortium of linguistic laboratories at the University of Konstanz spanning a v
 \item ...
 \end{itemize}
 
-\pause __https://www.ling.uni-konstanz.de/forschung/workshops/__
+\pause https://www.ling.uni-konstanz.de/forschung/workshops/
 
 ## Motion Pictures / Scientific Experiments
 
@@ -342,6 +342,16 @@ Some references:
 
 - Baayen, R. H., & Milin, P. (2010). Analyzing reaction times. International Journal of Psychological Research, 3(2), 12-28.
 - Leys, C., Ley, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. Journal of experimental social psychology, 49(4), 764-766.
+
+## Editing
+
+\pause When modelling: 
+
+\begin{itemize}[<+->]
+\item Your most complex model should be clear to you before you even start collecting data. 
+\item What is a fixed effect and what is a random effect in your experiment? 
+\item Slopes galore
+\end{itemize}
 
 ## Editing
 
