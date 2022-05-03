@@ -11,8 +11,9 @@ output:
     theme: "Frankfurt"
     colortheme: "dove"
     font: "serif"
-classoption: "aspectratio=169"
+classoption: "aspectratio=1610"
 ---
+
 
 ```{r, include = F}
 library(ggpubr)
@@ -29,9 +30,13 @@ knitr::opts_chunk$set(fig.align="center", include = F)
 
 # Introduction
  
-## Who am I
+## About me
 
 \pause
+
+Massimiliano __"Max"__ Canzi
+
+\pause \small
 
 \begin{itemize}[<+->]
 \item Lab Manager / Data Scientist @ Uni Konstanz
@@ -40,13 +45,37 @@ knitr::opts_chunk$set(fig.align="center", include = F)
 \item MA Linguistics @ Uni of Manchester 
 \end{itemize}
 
-## Who am I
+## About me
 
-Interested in R, experimental design, reproducibility, open science
+\pause \normalsize
+
+Interested in: __R__, experimental designs, __reproducibility__, open science, improving existing methodologies, data visualisation, honest scientific communication...
  
-## Once Upon a Time... in Hollywood
+## About the LingLabs
 
-\pause Planning a (linguistics) experiment and filming a Hollywood movie are not as far apart as you would think: 
+\pause
+
+Consortium of linguistic laboratories at the University of Konstanz spanning a variety of research topics and fields. 
+
+\pause \small
+
+\begin{itemize}[<+->]
+\item \textbf{Digital Signal Processing in R} by Dr Cristopher Carignan (UCL). \textit{8th and 9th of June, 2-4 pm CEST}
+\item \textbf{Collecting and exploring social media data in R} by Dr Lisa Donlan (UoManchester). \textit{ß22nd and 23rd of Sept, 2-4 pm CEST}
+\item ...
+\end{itemize}
+
+\pause __https://www.ling.uni-konstanz.de/forschung/workshops/__
+
+## Motion Pictures / Scientific Experiments
+
+\normalsize
+
+\pause 
+
+Planning a (linguistics) experiment and a movie production are not as far apart as you would think...
+
+\pause \small
 
 \begin{itemize}[<+->]
 \item Write a script
@@ -57,9 +86,17 @@ Interested in R, experimental design, reproducibility, open science
 \item Press, festivals
 \end{itemize}
 
-## Once Upon a Time... in Hollywood
+## Motion Pictures / Scientific Experiments
 
-\pause Planning a (linguistics) experiment and filming a Hollywood movie are not as far apart as you would think: 
+![Severance (2022)](pictures/severance-2022.jpg)
+
+##  Motion Pictures / Scientific Experiments
+
+\pause \normalsize
+
+Planning a (linguistics) experiment and a movie production are not as far apart as you would think...
+
+\pause \small
 
 \begin{itemize}[<+->]
 \item Formulate a research question
@@ -67,81 +104,126 @@ Interested in R, experimental design, reproducibility, open science
 \item Recruitment, equipment setup, hardware and software
 \item Data collection
 \item Data wrangling, analaysis and visualisation
-\item Paper, conferences
+\item Papers, conferences
 \end{itemize}
 
-## Once Upon a Time... in Hollywood
+## Motion Pictures / Scientific Experiments
 
-Just like when shooting a film. Plan ahead. \pause
+\pause \normalsize
 
-The more things you can accurately predict and plan, the more solid your design and experiment will be. That's pretty much all there is to it. 
+Just like when shooting a film, __plan ahead__. \pause
+
+The more things you can accurately predict and plan, the more solid your design and experiment will be. __That's pretty much all there is to it__.
 
 ## Thank you! 
 
-Questions?
+__Questions?__
 
-## Just kidding
+## Thank you! 
 
-\pause
+\pause \normalsize
 
-__Important:__ Starting now, most of the advice in this presentation is based on personal experience. As often is the case, there are many ways one can reach a destination. I am simply presenting some of the tips that helped me along the way. 
+__Just kidding...__ let's get started.
 
 # Pre-Production
 
-## Research Questions
+## The Script
+
+\pause \small
+
+Find a direct, achievable link between the __theory__ and its __implementation__. 
 
 \pause
 
-Find a link between the theory and the operalisation. 
+If your research question is too complex __scale down__, __zoom in__. 
 
 \pause 
 
+Develop clear, __testable__ hypotheses. 
+
+## The Budgeting
+
+\pause
+
+Find a direct, achievable link between the __theory__ and its __implementation__. 
+
+\pause \small
+
 \begin{itemize}[<+->]
-\item What method is best to answer the question? 
+\item What \textbf{method} is best to answer the question? 
 \item How many experiments? 
-\item What experimental design?
-\item How are variables going to be coded?
+\item What experimental \textbf{design}?
+\item How (and what) are variables going to be coded?
 \end{itemize}
 
-## Methods 
+## The Genre (aka The Method)
 
-\pause
+\pause Choose a method that __fits your research question__, but keep __ease of implementation__ in mind. 
 
-Choosing an experimental method is equivalent to choosing the __resolution__ of your study.
+\pause __Know your method well!__ Methods comes with __baggage__, meaning that often the chosen method determines conventions in experimental design, data analysis, presentation of results, etc. 
 
-## Experiment Number
+\pause Don't be afraid to innovate.
 
-\pause
+## Film or Mini Series?
 
-- Helps limit the design of the study 
-- Follow-up studies allow for clarification
+\pause Multiple experiments _might_ allow for a less complex experimental design, follow-up studies, ...
 
-## Experimental design
+\pause However, more experiments also mean more time spent on participant recruitment, data collection, ...
 
-\pause
+## Camera and Lens
 
-The experimental design should be directly correlated to the research question and the hypotheses. 
+\pause \small __If you were to take one thing home from today, make it this one:__ 
 
-\pause
+\pause __>>__ less is more __<<__
 
-It is really important that your design allows you to confidently test your hypotheses as you intend to. 
+\pause Every time you add a categorical predictor with two levels, for example, you should double your data. __Can you afford it?__
 
-\pause
+\pause Use tools like `simr` to help you determine sample size (Green and MacLeod 2016).
+
+\pause For the now visibly upset Bayesians...
+
+## Camera and Lens 
+
+\pause Choosing an experimental method and design is equivalent to choosing the __resolution__ of your study.
+
+\pause It is, again, really important that your design allows you to confidently test your hypotheses as you intend to. 
+
+\pause \small
 
 \begin{itemize}[<+->]
-\item Know your limits! 
-\item Know your goals! 
+\item Know your \textbf{limits}
+\item Know your \textbf{goals}
 \item Choose a balanced design
-\item Register your report
+\item \textbf{Register your report?}
+\end{itemize}
+
+## Registered Reports
+
+- Mertzen, D., Lago, S., & Vasishth, S. (2021). The benefits of preregistration for hypothesis-driven bilingualism research. Bilingualism: Language and Cognition, 24(5), 807-812.
+- Roettger, T. B. (2021). Preregistration in experimental linguistics: Applications, challenges, and limitations. Linguistics, 59(5), 1227-1249.
+
+## Resoution
+
+\pause One mistake I see often is related to variable coding, for example..
+
+\pause \small
+
+\begin{itemize}[<+->]
+\item Binary instead of continuous.. 
+\item 5-point instead of 100-point scales
+\item 100-point scales instead of 5-point scales
+\item ...
 \end{itemize}
 
 # Production
 
-## Finding your balance 
+## Find a Balance
 
 \pause
 
 Things to consider: 
+
+\pause \small
 
 \begin{itemize}[<+->]
 \item Location of the experiment (e.g. lab, online)
@@ -151,36 +233,67 @@ Things to consider:
 \item ...
 \end{itemize}
 
+## Filming Locations
+
+\pause Don't underestimate the power of the internet. 
+
+\pause Social medias, esp. __Twitter__, are a great place to advertise for your online studies. 
+
+\pause Online platforms are getting better and better, allowing for more complex designs and data collection types (e.g. reaction times, Stoet 2017).
+
+## Scenes
+
+\pause A balance between number of items and participants is necessary, and often dictated by the methodology \pause e.g. ERP experiments. 
+
+\pause Ideally, you would have an infinite number of both.
+
+\pause Always ask your participants a little more, especially if it's a lab-based experiment. 
+
+## Casting
+
+\pause Are university students in your university represnatitve enough of the sample you're looking for? 
+
+## Bits and Pieces
+
+\pause 
+
+\begin{itemize}[<+->]
+\item Write everything down (hardware, software, locations, etc.)
+\item Get all the forms you need (participant consent, data protection)
+\item Plan a storage solution for data and anonymise whenever possible 
+\item Hire a research assistant
+\end{itemize}
+
 # Post-Production
 
-## Pre-processing and Analysis
+## Editing
 
 __Know your data!__
 
-## Pre-processing and Analysis
+## Editing
 
 Let's have a look at some R code
 
-```{r, include = F}
-fm <- read_csv("data/facemask.csv") %>% 
+```{r, include = F, eval = F}
+fm <- read_csv("../data/facemask.csv") %>% 
   filter(correct == TRUE) %>%
   select(participant_private_id, participant_device_type, item, fricative, condition, rt) %>%
   mutate_if(is.character, as.factor)
 ```
 
-```{r}
+```{r, include = F, eval = F}
 head(fm)
 ```
 
-```{r}
+```{r, include = F, eval = F}
 rt_log <- fm %>% mutate(rt = log(rt))
 ```
 
-```{r}
+```{r, eval = F, include = F}
 model_one <- rt_log %>% lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
 ```
 
-```{r}
+```{r, include = F, eval = F}
 model_two <- fm %>% 
   #filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
     glmer(formula = rt ~ condition * fricative + participant_device_type + (1 | participant_private_id) + (1 | item), 
@@ -188,13 +301,13 @@ model_two <- fm %>%
                           control = glmerControl(optimizer = "bobyqa"))
 ```
 
-```{r}
+```{r, eval = F, include = F}
 model_one <- rt_log %>% 
   filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
   lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
 ```
 
-```{r}
+```{r, include = F, eval = F}
 model_two <- fm %>% 
   filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
     glmer(formula = rt ~ condition * fricative + participant_device_type + (1 | participant_private_id) + (1 | item), 
@@ -202,22 +315,22 @@ model_two <- fm %>%
                           control = glmerControl(optimizer = "bobyqa"))
 ```
 
-```{r}
+```{r, include = F, eval = F}
 car::Anova(model_one, type = "III")
 car::Anova(model_two, type = "III")
 ```
 
-```{r, include = F}
+```{r, include = F, eval = F}
 ggarrange(plot_model(model_one, type = "pred", terms = c("fricative", "condition")),
           plot_model(model_two, type = "pred", terms = c("fricative", "condition")),
           common.legend = TRUE) -> arranged_plot
 ```
 
-```{r, width = "50%"}
+```{r, include = F, eval = F, width = "50%"}
 arranged_plot
 ```
 
-## Pre-processing and Analysis
+## Editing
 
 \pause
 
@@ -230,23 +343,25 @@ Some references:
 - Baayen, R. H., & Milin, P. (2010). Analyzing reaction times. International Journal of Psychological Research, 3(2), 12-28.
 - Leys, C., Ley, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. Journal of experimental social psychology, 49(4), 764-766.
 
-## Pre-processing and Analysis
+## Editing
 
 \pause
 
-Sometimes, it's not as straightforward i.e. the story of event-related potentials (ERP)
+Sometimes, it's not as straightforward \pause i.e. the story of event-related potentials (ERP)
 
-## Reporting results
+## Editing
+
+\pause Reporting your results:
 
 \pause
 
 \begin{itemize}[<+->]
-\item Standardisation
-\item Supporting material
+\item Standardise (e.g. APA)
+\item Provide supporting material
 \item package \texttt{report}
 \end{itemize}
 
-## Reporting results
+## Editing
 
 \footnotesize
 
@@ -255,10 +370,45 @@ We fitted a linear mixed model (estimated using REML and nloptwrap optimizer) to
   - The effect of condition [WM] is statistically non-significant and positive (beta = 4.10e-03, 95% CI [-0.04, 0.05], t(11044) = 0.17, p = 0.867; Std. beta = 7.57e-03, 95% CI [-0.08, 0.10])
   - The effect of fricative [SH] is statistically significant and negative (beta = -0.22, 95% CI [-0.30, -0.15], t(11044) = -5.52, p < .001; Std. beta = -0.41, 95% CI [-0.56, -0.27]) ...
 
-## Reporting results
+## Editing
 
 \footnotesize
 
 Analyses were conducted using the R Statistical language (version 4.0.3; R Core Team, 2020) on macOS Big Sur 10.16, using the packages ggpubr (version 0.4.0; Alboukadel Kassambara, 2020), Matrix (version 1.3.2; Douglas Bates and Martin Maechler, 2021), lme4 (version 1.1.26; Douglas Bates et al., 2015), ggplot2 (version 3.3.5; Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.), stringr (version 1.4.0; Hadley Wickham, 2019), tidyr (version 1.1.2; Hadley Wickham, 2020), forcats (version 0.5.1; Hadley Wickham, 2021), readr (version 1.4.0; Hadley Wickham and Jim Hester, 2020), dplyr (version 1.0.4; Hadley Wickham et al., 2021), tibble (version 3.1.5; Kirill Müller and Hadley Wickham, 2021), lmerTest (version 3.1.3; Kuznetsova A et al., 2017), purrr (version 0.3.4; Lionel Henry and Hadley Wickham, 2020), sjPlot (version 2.8.9; Lüdecke D, 2021), viridis (version 0.5.1; Simon Garnier, 2018), viridisLite (version 0.4.0; Simon Garnier et al., 2021) and tidyverse (version 1.3.0; Wickham et al., 2019).
 
+## Color Grading
 
+\pause
+
+![Severance (2022)](pictures/severance-2-2022.jpg)
+
+## Color Grading
+
+Again, __>>__ less is more __<<__. A few tips: 
+
+\pause
+
+\begin{itemize}[<+->]
+\item Use package \texttt{viridis} whenever possible -- https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+\item Differentiate with shape, not just with colour
+\item Label everything clearly
+\item \textbf{Don't cheat!}
+\item Check with journals
+\end{itemize}
+
+## Festivals
+
+\pause Experiment done, data analysed, results reported, paper written. Time to __get it out into the world__. 
+
+\pause Consider __Open Access__ whenever possible. 
+
+\pause Share your data and your code with your paper. 
+
+## Ending Credits 
+
+\footnotesize
+
+- Baayen, R. H., & Milin, P. (2010). Analyzing reaction times. International Journal of Psychological Research, 3(2), 12-28.
+- Green, P., & MacLeod, C. J. (2016). SIMR: an R package for power analysis of generalized linear mixed models by simulation. Methods in Ecology and Evolution, 7(4), 493-498.
+- Leys, C., Ley, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. Journal of experimental social psychology, 49(4), 764-766.
+- Stoet, G. (2017). PsyToolkit: A novel web-based method for running online questionnaires and reaction-time experiments. Teaching of Psychology, 44(1), 24-31.
