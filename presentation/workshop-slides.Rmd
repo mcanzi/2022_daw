@@ -252,7 +252,7 @@ Things to consider:
 
 ## Casting
 
-\pause Are university students in your university represnatitve enough of the sample you're looking for? 
+\pause Are university students in your university representative enough of the sample you're looking for? 
 
 ## Bits and Pieces
 
@@ -302,7 +302,7 @@ model_two <- fm %>%
                           control = glmerControl(optimizer = "bobyqa"))
 ```
 
-```{r, eval = T, include = F}
+```{r, include = F, eval = T}
 model_one <- rt_log %>% 
   filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
   lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
