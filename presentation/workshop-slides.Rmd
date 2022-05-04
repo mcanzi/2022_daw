@@ -16,6 +16,7 @@ classoption: "aspectratio=1610"
 
 
 ```{r, include = F}
+library(ggeffects)
 library(ggpubr)
 library(lme4)
 library(lmerTest)
@@ -274,22 +275,22 @@ __Know your data!__
 
 Let's have a look at some R code
 
-```{r, include = F, eval = F}
+```{r, include = F, eval = T}
 fm <- read_csv("../data/facemask.csv") %>% 
   filter(correct == TRUE) %>%
   select(participant_private_id, participant_device_type, item, fricative, condition, rt) %>%
   mutate_if(is.character, as.factor)
 ```
 
-```{r, include = F, eval = F}
+```{r, include = F, eval = T}
 head(fm)
 ```
 
-```{r, include = F, eval = F}
+```{r, include = F, eval = T}
 rt_log <- fm %>% mutate(rt = log(rt))
 ```
 
-```{r, eval = F, include = F}
+```{r, eval = F, include = T}
 model_one <- rt_log %>% lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
 ```
 
@@ -301,7 +302,7 @@ model_two <- fm %>%
                           control = glmerControl(optimizer = "bobyqa"))
 ```
 
-```{r, eval = F, include = F}
+```{r, eval = T, include = F}
 model_one <- rt_log %>% 
   filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
   lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
@@ -391,6 +392,46 @@ Analyses were conducted using the R Statistical language (version 4.0.3; R Core 
 \pause
 
 ![Severance (2022)](pictures/severance-2-2022.jpg)
+
+## Color Grading
+
+\pause When modelling, I like to provide plots showing model estimates, rather than plotting raw data. 
+
+\pause For example, you can use package \texttt{sjPlot}, or do it yourself with packages \texttt{ggeffects} and \texttt{ggplot2}.
+
+```{r, include = F}
+ggpredict(model_one, terms = c("fricative", "condition")) -> pred
+```
+
+```{r, include = F}
+pred %>% 
+  ggplot(aes(y = predicted, x = x, col = group))
+
+```
+
+```{r, include = F}
+library(palmerpenguins)
+```
+
+```{r, include = F}
+penguin.model <- penguins %>% 
+  lmer(formula = body_mass_g ~ flipper_length_mm * species + (1 | year))
+```
+
+```{r, include = F}
+summary(penguin.model)
+```
+
+```{r, include = F}
+penguin.pred <- ggpredict(penguin.model, terms = c("flipper_length_mm", "species"))
+```
+
+```{r, include = F, message = F}
+plot_model(penguin.model, type = "pred", terms = c("flipper_length_mm", "species")) +
+  aes(linetype = group) 
+  #scale_colour_manual(values = c()) + 
+  #scale_fill_manual(values = c())
+```
 
 ## Color Grading
 
