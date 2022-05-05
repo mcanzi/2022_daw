@@ -304,15 +304,15 @@ model_two <- fm %>%
 
 ```{r, include = F, eval = T}
 model_one <- rt_log %>% 
-  filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
+  #filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
   lmer(formula = rt ~ condition * fricative + participant_device_type + (condition | participant_private_id) + (1 | item))
 ```
 
 ```{r, include = F, eval = F}
 model_two <- fm %>% 
-  filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
-    glmer(formula = rt ~ condition * fricative + participant_device_type + (1 | participant_private_id) + (1 | item), 
-                          family = Gamma(link = "log"), 
+  #filter(rt >= median(rt) - 3 * mad(rt) & rt <= median(rt) + 3 * mad(rt)) %>%
+    glmer(formula = rt ~ condition * fricative + (1 | participant_private_id) + (1 | item), 
+                          family = "Gamma", 
                           control = glmerControl(optimizer = "bobyqa"))
 ```
 
